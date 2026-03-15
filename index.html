@@ -1,1 +1,443 @@
 
+```html
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Atelierul de Slăbit | Remodelare Corporală & Estetică</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#111;
+color:white;
+line-height:1.6;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:70px 20px;
+}
+
+h1,h2,h3{
+margin-bottom:15px;
+}
+
+h1{
+font-size:48px;
+color:#ff8c1a;
+}
+
+h2{
+text-align:center;
+color:#ff8c1a;
+margin-bottom:50px;
+font-size:32px;
+}
+
+p{
+color:#d0d0d0;
+}
+
+.hero{
+background:url("images/facial1.jpg") center/cover no-repeat;
+padding:160px 20px;
+position:relative;
+text-align:center;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:800px;
+margin:auto;
+}
+
+.cta{
+display:inline-block;
+background:linear-gradient(135deg,#ff8c1a,#ff6a00);
+color:black;
+padding:18px 34px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none;
+margin-top:20px;
+transition:0.3s;
+}
+
+.cta:hover{
+transform:scale(1.05);
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.service{
+background:#1c1c1c;
+border-radius:12px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.service:hover{
+transform:translateY(-8px);
+}
+
+.service img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.service-content{
+padding:25px;
+text-align:center;
+}
+
+.service h3{
+color:#ff8c1a;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+background:#1c1c1c;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+height:250px;
+object-fit:cover;
+}
+
+.testimonials{
+background:#1a1a1a;
+border-radius:10px;
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.testimonial{
+background:#262626;
+padding:25px;
+border-radius:10px;
+font-style:italic;
+}
+
+.testimonial strong{
+color:#ff8c1a;
+}
+
+.cta-section{
+text-align:center;
+}
+
+footer{
+background:#0d0d0d;
+padding:50px 20px;
+text-align:center;
+color:#888;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:18px 22px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 6px 20px rgba(0,0,0,0.4);
+}
+
+</style>
+</head>
+
+<body>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Redescoperă-ți frumusețea</h1>
+
+<p>
+La <strong>Atelierul de Slăbit</strong> oferim tratamente moderne de remodelare corporală și estetică facială cu rezultate vizibile.
+</p>
+
+<a class="cta" href="https://wa.me/40700000000">
+Programează Consultația
+</a>
+
+</div>
+
+</section>
+
+
+<section class="container">
+
+<h2>Serviciile Noastre</h2>
+
+<div class="services">
+
+
+<div class="service">
+
+<img src="images/criolipoliza.jpg">
+
+<div class="service-content">
+
+<h3>Criolipoliză</h3>
+
+<p>
+Reduce grăsimea localizată și conturează corpul fără intervenții chirurgicale.
+</p>
+
+<a class="cta" href="https://wa.me/40700000000">
+Rezervă ședința
+</a>
+
+</div>
+
+</div>
+
+
+<div class="service">
+
+<img src="images/remodelare.jpg">
+
+<div class="service-content">
+
+<h3>Remodelare Corporală</h3>
+
+<p>
+Tratament eficient pentru reducerea celulitei și tonifierea pielii.
+</p>
+
+<a class="cta" href="https://wa.me/40700000000">
+Programează-te
+</a>
+
+</div>
+
+</div>
+
+
+<div class="service">
+
+<img src="images/epilare.jpg">
+
+<div class="service-content">
+
+<h3>Epilare Definitivă</h3>
+
+<p>
+Tehnologie modernă pentru eliminarea părului nedorit pe termen lung.
+</p>
+
+<a class="cta" href="https://wa.me/40700000000">
+Începe tratamentul
+</a>
+
+</div>
+
+</div>
+
+
+<div class="service">
+
+<img src="images/facial2.jpg">
+
+<div class="service-content">
+
+<h3>Hydrafacial</h3>
+
+<p>
+Curățare profundă și hidratare intensă pentru un ten luminos.
+</p>
+
+<a class="cta" href="https://wa.me/40700000000">
+Rezervă tratamentul
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section class="container">
+
+<h2>De ce să alegi Atelierul de Slăbit</h2>
+
+<div class="features">
+
+<div class="feature">
+✔ Aparatură medicală modernă
+</div>
+
+<div class="feature">
+✔ Specialiști cu experiență
+</div>
+
+<div class="feature">
+✔ Tratamente personalizate
+</div>
+
+<div class="feature">
+✔ Rezultate vizibile rapid
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="container">
+
+<h2>Tratamente în clinică</h2>
+
+<div class="gallery">
+
+<img src="images/facial1.jpg">
+<img src="images/epilare2.jpg">
+<img src="images/remodelare.jpg">
+<img src="images/facial2.jpg">
+
+</div>
+
+</section>
+
+
+
+<section class="container testimonials">
+
+<h2>Ce spun clientele</h2>
+
+<div class="testimonial-grid">
+
+<div class="testimonial">
+
+"O experiență minunată! Rezultatele se văd după primele ședințe."
+
+<br><br>
+<strong>Iris C.</strong>
+
+</div>
+
+<div class="testimonial">
+
+"Echipa este foarte profesionistă și atmosfera relaxantă."
+
+<br><br>
+<strong>Mirela S.</strong>
+
+</div>
+
+<div class="testimonial">
+
+"Recomand cu încredere. Tratamentele chiar funcționează."
+
+<br><br>
+<strong>Larisa M.</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="container cta-section">
+
+<h2>Începe transformarea chiar azi</h2>
+
+<p>
+Programează o consultație și află ce tratament ți se potrivește.
+</p>
+
+<a class="cta" href="https://wa.me/40700000000">
+Rezervă locul acum
+</a>
+
+</section>
+
+
+
+<footer>
+
+<p><strong>Atelierul de Slăbit</strong></p>
+
+<p>
+Telefon: 0700 000 000
+</p>
+
+<p>
+Instagram | Facebook
+</p>
+
+<p>
+© 2026 Atelierul de Slăbit
+</p>
+
+</footer>
+
+
+<a class="whatsapp" href="https://wa.me/40700000000">
+WhatsApp
+</a>
+
+
+</body>
+</html>
+```
